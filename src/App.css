@@ -150,20 +150,16 @@ footer a {
     object-fit: cover;
     object-position: 0% 70%;
     top: 10px;
-
-    border: 2px solid black;
   }
 
   .aboutDiv .special {
     height: 90%;
     display: flex;
     justify-content: flex-start;
-    border: 2px solid black;
   }
   .special p {
     text-align: left;
     align-self: center;
-    border: 2px solid black;
   }
 }
 @media (max-width: 586px) {
