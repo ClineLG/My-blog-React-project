@@ -1,0 +1,195 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(203, 203, 203);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  margin: 0 auto;
+  width: 1000px;
+}
+
+p {
+  font-size: 16px;
+  text-align: justify;
+}
+
+header {
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 30px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 25px;
+}
+/* Navigation Menu */
+
+.nav {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+}
+.nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav div {
+  display: flex;
+  gap: 40px;
+}
+
+main {
+  display: flex;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  gap: 20px;
+}
+
+.main {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.itemDiv {
+  height: 700px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 25px;
+}
+.itemDiv .image {
+  height: 58%;
+  width: 100%;
+  object-fit: cover;
+  object-position: bottom;
+}
+.side {
+  flex: 1;
+}
+.aboutDiv {
+  height: 400px;
+  background-color: white;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.aboutDiv .image {
+  height: 80%;
+  width: 100%;
+  object-fit: cover;
+}
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 16;
+}
+.itemDiv p {
+  line-height: 20px;
+}
+.aboutDiv p {
+  line-height: 20px;
+}
+
+/* footer */
+
+footer {
+  padding: 30px;
+  background-color: rgb(180, 177, 177);
+}
+
+footer p {
+  text-align: center;
+}
+footer a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media (max-width: 1074px) {
+  .container {
+    width: 100%;
+  }
+
+  main.container {
+    width: 90%;
+  }
+
+  main {
+    flex-direction: column-reverse;
+  }
+  .main {
+    width: 100%;
+  }
+  .aboutDiv {
+    height: 450px;
+  }
+  .aboutDiv .image {
+    width: 60%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0% 70%;
+    top: 10px;
+
+    border: 2px solid black;
+  }
+
+  .aboutDiv .special {
+    height: 90%;
+    display: flex;
+    justify-content: flex-start;
+    border: 2px solid black;
+  }
+  .special p {
+    text-align: left;
+    align-self: center;
+    border: 2px solid black;
+  }
+}
+@media (max-width: 586px) {
+  .special {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+  .aboutDiv .image {
+    width: 60%;
+    height: 80%;
+    align-self: center;
+    object-fit: cover;
+  }
+  .special p {
+    text-align: center;
+  }
+  .aboutDiv {
+    height: 320px;
+  }
+  .itemDiv {
+    height: 900px;
+  }
+
+  .aboutDiv h3 {
+    text-align: center;
+    font-size: 22px;
+  }
+}
