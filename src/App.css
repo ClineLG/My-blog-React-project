@@ -155,7 +155,7 @@ footer a {
   .aboutDiv .special {
     height: 90%;
     display: flex;
-    justify-content: flex-start;
+    gap: 20px;
   }
   .special p {
     text-align: left;
